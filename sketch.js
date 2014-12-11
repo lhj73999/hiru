@@ -3,13 +3,13 @@ var bg;
 
 function setup() {
   createCanvas(800,800);
-  bg = loadImage("space.jpg");
+  bg = loadImage("bg.jpg");
   img = loadImage("dog.png");
   img2 = loadImage("boo.png");
   img3 = loadImage("mooo.png");
  
 
-}
+} 
 
 function draw() {
    background(bg);
