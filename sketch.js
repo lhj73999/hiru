@@ -1,18 +1,24 @@
-var img;
+var playing = false;
+var fingers;
+var button;
 
 
-function setup() 
-{
-  createCanvas(800, 600);
-  img = loadimage("1.png");
+function setup() {
+  // specify multiple formats for different browsers
+  fingers = createVideo(['hi.mp4', 
+                         'hi.webm']);
+  button = createButton('play');
+  button.mousePressed(toggleVid); // attach button listener
 }
 
-function draw()
-{ 
-  background(img);
-  noFill();
-  nostroke();
-
-
-  
-}   
+// plays or pauses the video depending on current state
+function toggleVid() {
+  if (playing) {
+    fingers.pause();
+    button.html('play');
+  } else {
+    fingers.loop();
+    button.html('pause');
+  }
+  playing = !playing;
+}
