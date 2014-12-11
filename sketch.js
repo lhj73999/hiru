@@ -9,11 +9,10 @@ function setup()
 
 function draw()
 { 
-  background(0);
+  background(img);
   noFill();
   nostroke();
 
-  //mouse ellipse
-  image(img, 100, 100);
+
   
 }   
