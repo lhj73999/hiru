@@ -5,8 +5,8 @@ var button;
 
 function setup() {
   // specify multiple formats for different browsers
-  fingers = createVideo(['hi.mp4', 
-                         'hi.webm']);
+  fingers = createVideo(['wpqkf.avi', 
+                         'wpqkf.webm']);
   button = createButton('play');
   button.mousePressed(toggleVid); // attach button listener
 }
@@ -21,4 +21,4 @@ function toggleVid() {
     button.html('pause');
   }
   playing = !playing;
-}
+} 
